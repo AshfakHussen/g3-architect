@@ -1,0 +1,393 @@
+/* ------------
+common style
+----------------- */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/* ------------------
+main
+---------------------- */
+.main {
+    background-color: rgba(255, 144, 14, 0.1);
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+.header-title {
+    padding-left: 72px;
+    font-size: 34px;
+    font-weight: bolder;
+}
+
+.all-nav {
+    display: flex;
+    padding-right: 60px;
+    gap:22px;
+
+}
+
+.nav {
+    list-style: none;
+    padding-right: 20px;
+}
+
+/*---------------- 
+banner
+---------------- */
+.banner-div {
+    margin: auto;
+    width: 830px;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.banner-title {
+    font-size: 44px;
+    font-weight: 1200px;
+    color: black;
+}
+
+.banner-paragraph {
+    font-size: 16px;
+    color: gray;
+}
+
+.banner-btn {
+    background: orange;
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    height: 45px;
+    width: 145px;
+    font: 20px;
+}
+
+.banner-pic img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+/*----------------
+ banner end
+------------------ */
+/* ------------
+features
+------------------ */
+.all-features {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    column-gap: 16px;
+    row-gap: 16px;
+}
+
+.feature img {
+    height: 260px;
+    width: 260px;
+}
+
+.feature-list {
+    width: 300px;
+}
+
+/* -------------------------
+features details
+---------------------------- */
+.features-details {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 11px;
+    gap: 10px;
+    margin-bottom: 160px;
+
+}
+
+.features-in-text {
+    width: 420px;
+}
+
+.feature-details-title {
+    padding-left: 12px;
+    border-left: 3px solid orange;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.features-child-div {
+    padding-left: 18px;
+}
+
+.features-child-para,
+.features-details-para {
+    font-size: 16px;
+    color: gray;
+}
+
+.features-picture img {
+    height: 720px;
+}
+
+.experience-btn {
+    background: orange;
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    font-size: 34px;
+    font-weight: 700;
+    height: 170px;
+    width: 280px;
+    position: absolute;
+    bottom: -3%;
+    left: 46%;
+
+}
+
+.spn-btn {
+    font-size: 16px;
+}
+
+/* --------------------------
+all facts
+------------------------------- */
+
+.facts {
+    margin-bottom: 70px;
+}
+
+.facts-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-left: 200px;
+}
+
+.facts-para {
+    padding-left: 200px;
+    margin-top: 30px;
+    font-size: 12px;
+    color: gray;
+
+}
+
+.fact {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 208px;
+    padding-right: 208px;
+}
+
+.achievement {
+    text-align: center;
+    border: 1px solid tomato;
+    width: 190px;
+    height: 150px;
+    padding-top: 25px;
+    padding-bottom: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 7px;
+}
+
+.fact-title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.fact-description {
+    color: gray;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+/* ------------------------
+sponsor
+--------------------------- */
+.sponsor-title {
+    text-align: center;
+    font-size: 34px;
+    font-weight: bolder;
+    margin-top: 80px;
+}
+
+.sponsor-paragraph {
+    text-align: center;
+    font-size: 12px;
+}
+
+.sponsors {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 90px;
+}
+
+.sponsor img {
+    color: gray;
+}
+
+.copyright {
+    text-align: center;
+    background-color: hwb(49 81% 4%);
+    margin-top: 130px;
+    margin-bottom: 220px;
+    color: rgb(135, 133, 133);
+    width: 1000px;
+    height: 50px;
+    padding-top: 33px;
+    margin-left: 242px;
+    border-radius: 8px;
+
+}
+
+/* -------------------
+responsive for mobile phone
+------------------------- */
+@media only screen and (max-width:688px) {
+    .header {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding-left: 20px;
+        
+    }
+
+    .header-title {
+        font-size: 26px;
+        display: flex;
+        padding-left: 0;
+    }
+
+    .all-nav {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* -----------
+    banner
+    --------- */
+    .banner-div {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .banner-title {
+        font-size: 24px;
+    }
+
+    .banner-paragraph {
+        padding: 5px 24px;
+    }
+
+    .all-features,
+    .features {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .feature-list {
+        padding-left: 35px;
+        margin-bottom: 10px;
+
+    }
+    .features-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+    .features-in-text {
+        width: 280px;
+    }
+    .feature-details-title {
+        font-size: 24px;
+    }
+
+    .features-picture img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        height: auto;
+    }
+
+    .experience-btn {
+        height: 100px;
+        width: 160px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: absolute;
+        left: 38px;
+        bottom: -8px;
+    }
+
+    /* -----------------
+    facts
+    ----------------------- */
+    .fact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .facts-title,
+    .facts-para {
+        position: relative;
+        right: 77px;
+    }
+
+    /* --------------------------
+footer
+------------------------------ */
+    .sponsor-title,
+    .sponsor-paragraph {
+        text-align: center;
+    }
+
+    .sponsors {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 18px;
+        row-gap: 25px;
+        margin-left:auto;
+        margin-right: auto;
+        width: 20%;
+
+    }
+    .sponsor img{width:98px;}
+
+    .copyright {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+    
+}
